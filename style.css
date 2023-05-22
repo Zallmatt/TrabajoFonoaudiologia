@@ -1,0 +1,42 @@
+body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: rgb(2, 87, 70);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.fondo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(2, 87, 70);
+    text-align: center;
+}
+.diapositiva{
+    display:flex;
+    background-color: rgb(242, 242, 242);
+    height: 90vh;
+    width: 180vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+.parrafoArriba{
+    height: 30px;
+    width: 200px;
+    background-color: red;
+    border-radius: 15px;
+}
+.tituloPrincipal{
+    border-radius: 15px;
+    font-size: 50px;
+    font-family: cursive;
+}
+.parrafoAbajo{
+    height: 30px;
+    width: 200px;
+    background-color: red;
+    border-radius: 15px;
+}
