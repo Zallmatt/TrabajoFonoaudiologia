@@ -40,3 +40,7 @@ body{
     background-color: red;
     border-radius: 15px;
 }
+
+.btn-danger{
+    width: 150px !important;
+}
