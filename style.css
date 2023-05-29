@@ -19,28 +19,35 @@ body{
     background-color: rgb(242, 242, 242);
     height: 90vh;
     width: 180vh;
-    align-items: center;
-    justify-content: center;
     flex-direction:column;
 }
-.parrafoArriba{
-    height: 30px;
-    width: 200px;
-    background-color: red;
-    border-radius: 15px;
-}
+
 .tituloPrincipal{
-    border-radius: 15px;
-    font-size: 50px;
     font-family: cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
 }
+
 .parrafoAbajo{
-    height: 30px;
-    width: 200px;
-    background-color: red;
+    position: absolute;
+    height: 40px;
+    width: 400px;
     border-radius: 15px;
+    background-color: rgb(171, 5, 5);
+    top: 30%; /* Ajusta este valor según tus necesidades */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+
 }
 
 .btn-danger{
     width: 150px !important;
+    position: absolute;
+    top: 70%; /* Ajusta este valor según tus necesidades */
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
