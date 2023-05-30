@@ -100,3 +100,286 @@ body{
     transform: translate(-50%, -50%);
     font-size: 35px;
 }
+
+/*Comenzar Juego*/
+.tituloComenzarJuego{
+    font-family: cursive;
+    position: absolute;
+    width: 1150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+}
+.btn-circle.btn-xl {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 70%; /* Ajusta este valor según tus necesidades */
+    left: 60%;
+    border-radius: 150px;
+    font-size: 12px;
+    text-align: center;
+    font-size: 5rem;
+}
+.btn-circle.btn-sm {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 70%; /* Ajusta este valor según tus necesidades */
+    left: 40%;
+    border-radius: 150px;
+    font-size: 12px;
+    text-align: center;
+    font-size: 5rem;
+}
+
+/*SeleccionarEdad*/
+.diapositivaSeleccionarEdad{
+    display:flex;
+    background-color: #ccff90;
+    height: 90vh;
+    width: 180vh;
+    flex-direction:column;
+}
+.tituloSeleccionarEdad{
+    font-family: cursive;
+    position: absolute;
+    width: 1200px;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+}
+.botonEdadMenor{
+    width: 400px;
+    height: 100px;
+    border-radius: 150px;
+    position: absolute;
+    text-align: center;
+    top: 70%; /* Ajusta este valor según tus necesidades */
+    left: 20%;
+    background-color: #0dcaf0;
+    font-size: 4rem;
+}
+.botonEdadMayor{
+    width: 400px;
+    height: 100px;
+    border-radius: 150px;
+    position: absolute;
+    text-align: center;
+    top: 70%; /* Ajusta este valor según tus necesidades */
+    left: 60%;
+    background-color: #0dcaf0;
+    font-size: 4rem;
+}
+
+/*Componente Fonologico*/
+.tiutloComponenteFonologico{
+    font-family: cursive;
+    position: absolute;
+    width: 1300px;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+}
+.parrafoComponenteFonologico1{
+    font-family: cursive;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+.parrafoComponenteFonologico2{
+    font-family: cursive;
+    position: absolute;
+    width: 1500px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+.parrafoComponenteFonologico3{
+    font-family: cursive;
+    width: 1500px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+.parrafoComponenteFonologico4{
+    font-family: cursive;
+    position: absolute;
+    width: 1500px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+
+/*Componente Fonologico Juego1*/
+.fondoJuego1{
+    display: flex;
+    height: 100vh;
+    background-color: rgb(185, 22, 70);
+    text-align: center;
+}
+.diapositivaJuego1{
+    display:flex;
+    background-color: rgb(242, 242, 242);
+    position: absolute;
+    top: 15%;
+    left: 9%;
+    height: 750px;
+    width: 1600px;
+    flex-direction:column;
+}
+.tituloPrincipalJuego1{
+    font-family: cursive;
+    width: 1200px;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+}
+.silaba1{
+    font-family: cursive;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    background-color: rgb(0, 69, 44);
+    width: 180px;
+    height: 160px;
+    border-radius: 10px;
+}
+.silaba2{
+    font-family: cursive;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    background-color: rgb(0, 69, 44);
+    width: 180px;
+    height: 160px;
+    border-radius: 10px;
+}
+.silaba3{
+    font-family: cursive;
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    background-color: rgb(0, 69, 44);
+    width: 180px;
+    height: 160px;
+    border-radius: 10px;
+}
+.divisoria1{
+    font-family: cursive;
+    position: absolute;
+    top: 75%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 23rem;
+}
+.divisoria2{
+    font-family: cursive;
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 23rem;
+}
+.barraAbajo1{
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    background-color: yellow;
+    top: 91%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+}
+.barraAbajo2{
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    background-color: yellow;
+    top: 91%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+}
+.barraAbajo3{
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    background-color: yellow;
+    top: 91%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+}
+.botonVolverIntentar{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20%; /* Ajusta este valor según tus necesidades */
+    left: 15%;
+    text-align: center;
+    font-size: 5.5rem;
+    background-color: #b01a1a; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    border-radius: 150px; /*bordes redondos*/
+}
+.botonFelicitaciones{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20%; /* Ajusta este valor según tus necesidades */
+    left: 75%;
+    text-align: center;
+    font-size: 5.5rem;
+    background-color: #1fb822; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    border-radius: 150px; /*bordes redondos*/
+}
+/*Felicitaciones*/
+.fondoFelicitaciones{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(249, 192, 65);
+    text-align: center;
+}
+.tituloGenial{
+    font-family: cursive;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+}
+
+/*volverIntentar*/
+.fondoVolverIntentar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(187, 221, 245);
+    text-align: center;
+}
