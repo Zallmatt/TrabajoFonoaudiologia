@@ -356,6 +356,7 @@ body{
     text-transform: uppercase; /*capitalización texto*/
     border-radius: 150px; /*bordes redondos*/
 }
+
 /*Felicitaciones*/
 .fondoFelicitaciones{
     display: flex;
@@ -373,6 +374,21 @@ body{
     transform: translate(-50%, -50%);
     font-size: 8rem;
 }
+.BotonFelicitacionGeneral{
+    width: 250px;
+    height: 250px;
+    border-radius: 250px; /*bordes redondos*/
+    position: absolute;
+    top: 49%; /* Ajusta este valor según tus necesidades */
+    left: 44%;
+    text-align: center;
+    font-size: 10rem;
+    background-color: #1fb822; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+
+}
 
 /*volverIntentar*/
 .fondoVolverIntentar{
@@ -382,4 +398,114 @@ body{
     height: 100vh;
     background-color: rgb(187, 221, 245);
     text-align: center;
+}
+.BotonVolverIntentarGeneral{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 49%; /* Ajusta este valor según tus necesidades */
+    left: 40%;
+    text-align: center;
+    font-size: 15rem;
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+}
+/*Componente Fonologico Juego2*/
+.fondoJuego2{
+    display: flex;
+    height: 100vh;
+    background-color: rgb(57, 125, 201);
+    text-align: center;
+}
+.diapositivaJuego2{
+    display:flex;
+    background-color: rgb(242, 242, 242);
+    position: absolute;
+    top: 15%;
+    left: 9%;
+    height: 750px;
+    width: 1600px;
+    flex-direction:column;
+}
+.silaba1Juego2{
+    font-family: cursive;
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    background-color: rgb(0, 69, 44);
+    width: 320px;
+    height: 160px;
+    border-radius: 10px;
+}
+.silaba2Juego2{
+    font-family: cursive;
+    position: absolute;
+    top: 80%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    background-color: rgb(0, 69, 44);
+    width: 180px;
+    height: 160px;
+    border-radius: 10px;
+}
+.silaba3Juego2{
+    font-family: cursive;
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    background-color: rgb(0, 69, 44);
+    width: 190px;
+    height: 160px;
+    border-radius: 10px;
+}
+.divisoria1Juego2{
+    font-family: cursive;
+    position: absolute;
+    top: 75%;
+    left: 61.5%;
+    transform: translate(-50%, -50%);
+    font-size: 20rem;
+}
+.divisoria2Juego2{
+    font-family: cursive;
+    position: absolute;
+    top: 75%;
+    left: 46.2%;
+    transform: translate(-50%, -50%);
+    font-size: 20rem;
+}
+.barraAbajo1Juego2{
+    position: absolute;
+    width: 320px;
+    height: 30px;
+    background-color: yellow;
+    top: 91%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+}
+.barraAbajo2Juego2{
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    background-color: yellow;
+    top: 91%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+}
+.barraAbajo3Juego2{
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    background-color: yellow;
+    top: 91%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
 }
