@@ -410,6 +410,7 @@ body{
     text-decoration: none; /*decoración texto*/
     text-transform: uppercase; /*capitalización texto*/
 }
+
 /*Componente Fonologico Juego2*/
 .fondoJuego2{
     display: flex;
@@ -508,4 +509,127 @@ body{
     left: 70%;
     transform: translate(-50%, -50%);
     font-size: 1rem;
+}
+
+/*Componente Fonologico Juego3*/
+.silaba1Juego3{
+    font-family: cursive;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    background-color: rgb(0, 69, 44);
+    width: 220px;
+    height: 160px;
+    border-radius: 10px;
+}
+.silaba2Juego3{
+    font-family: cursive;
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    background-color: rgb(0, 69, 44);
+    width: 220px;
+    height: 160px;
+    border-radius: 10px;
+}
+.divisoria1Juego3{
+    font-family: cursive;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20rem;
+}
+.barraAbajo1Juego3{
+    position: absolute;
+    width: 220px;
+    height: 30px;
+    background-color: yellow;
+    top: 91%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+}
+.barraAbajo2Juego3{
+    position: absolute;
+    width: 220px;
+    height: 30px;
+    background-color: yellow;
+    top: 91%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+}
+
+/*ComponenteFonologicoJuego2*/
+.fondoComponenteFonologicoJuego2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(185, 22, 70);
+    text-align: center;
+}
+.consignaFonologico2Juego1{
+    font-family: cursive;
+    width: 600px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+}
+.palabra1Fonologico2Juego1{
+    font-family: cursive;
+    width: 600px;
+    position: absolute;
+    top: 80%;
+    left: 16.8%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+.palabra2Fonologico2Juego1{
+    font-family: cursive;
+    width: 600px;
+    position: absolute;
+    top: 65.5%;
+    left: 40.8%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+.palabra3Fonologico2Juego1{
+    font-family: cursive;
+    width: 600px;
+    position: absolute;
+    top: 80%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+.palabra4Fonologico2Juego1{
+    font-family: cursive;
+    width: 600px;
+    position: absolute;
+    top: 68%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+.avanzar{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    position: absolute;
+    top: 80%; /* Ajusta este valor según tus necesidades */
+    left: 80%;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #088cbc; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
 }
