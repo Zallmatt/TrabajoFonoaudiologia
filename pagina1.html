@@ -10,13 +10,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="fondo">
-        <div class="diapositiva">
-            <img src="imagenes/469b1f1d-1557-45db-9ed8-3e54b6ef3e9e.png" style="width: 140px; height: 140px; transform: translate(-20px, 600px) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false"> 
-            <img src="imagenes/7aa93db840045dd774b86d023f9bd572.gif" style="width: 150px; height: 150px; transform: translate(0px, -130px) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false">   
-            <img src="imagenes/9f50cf0dc9588aec4f5184b240c41038.gif" style="width: 150px; height: 300px; transform: translate(1345px, -90px) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false">                    
+    <div class="fondoGeneral">
+        <div class="diapositivaGeneral">
+            <img src="imagenes\Pagina1\discoPagina1.png" style="width: 8vw; height: 7vw; position: fixed; top: 45%; left: 2%; transform: translate(-50%, -50%) rotate(0deg);" alt="Disco Vinilo">
+            <img src="imagenes\Pagina principal\banderasBordePaginaPrincipal.png" style="width: 35vw; height: 15vw; position: fixed; top: 5%; left: 95%; transform: translate(-50%, -50%) rotate(0deg);" alt="Banderas">
+            <img src="imagenes\Pagina1\redondoPagina1.gif" style="width: 8vw; height: 8vw; position: fixed; top: 10%; left: 5%; transform: translate(-50%, -50%) rotate(0deg);" alt="Redondo Gif">
+            <img src="imagenes\Pagina1\sonrisaPagina1.png" style="width: 8vw; height: 8vw; position: fixed; top: 95%; left: 2%; transform: translate(-50%, -50%) rotate(-10deg);" alt="Emoji Sonrisa">
+            <img src="imagenes\Pagina1\triangulosPagina1.gif" style="width: 10vw; height: 15vw; position: fixed; top: 80%; left: 100%; transform: translate(-50%, -50%) rotate(0deg);" alt="Triangulos gif">
             <div class="" >
-                <a class="btn btn-success" href="instrucciones.html">Continuemos</a>
+                <a id="myButton" style="display: none"; class="botonContinuemos" href="instrucciones.html">Continuemos</a>
             </div>
             <div>
                 <h1 class="tituloPagina1">
@@ -33,5 +35,15 @@
             </div>
         </div>
     </div>
+    <script>
+        // Obtener referencia al botón
+        var myButton = document.getElementById("myButton");
+
+        // Esperar 5 segundos (5000 milisegundos)
+        setTimeout(function() {
+        // Mostrar el botón cambiando su estilo
+        myButton.style.display = "block";
+        }, 4000);
+    </script>
 </body>
 </html>
