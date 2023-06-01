@@ -267,6 +267,21 @@ body{
     transform: translate(-50%, -50%);
     font-size: 3rem;
 }
+.botonEmpecemos{
+    width: 200px;
+    height: 45px;
+    position: absolute;
+    top: 85%; /* Ajusta este valor según tus necesidades */
+    left: 44%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #1b8106; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    border-radius: 10px; /*bordes redondos*/
+}
+
 
 /*Componente Fonologico Juego1*/
 .fondoJuego1{
@@ -274,16 +289,19 @@ body{
     height: 100vh;
     background-color: rgb(185, 22, 70);
     text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .diapositivaJuego1{
     display:flex;
     background-color: rgb(242, 242, 242);
     position: absolute;
-    top: 15%;
-    left: 9%;
-    height: 750px;
-    width: 1600px;
     flex-direction:column;
+    height: 80vh;
+    width: 90vw;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .tituloPrincipalJuego1{
     font-family: cursive;
@@ -384,7 +402,7 @@ body{
     height: 150px;
     position: absolute;
     top: 20%; /* Ajusta este valor según tus necesidades */
-    left: 15%;
+    left: 16%;
     text-align: center;
     font-size: 5.5rem;
     background-color: #b01a1a; /*color botón*/
@@ -407,13 +425,13 @@ body{
     text-transform: uppercase; /*capitalización texto*/
     border-radius: 150px; /*bordes redondos*/
 }
-.botonSiguiente1{
+.botonPrimeraSilaba{
     width: 200px;
     height: 45px;
     border-radius: 10px;
     position: absolute;
     top: 60%; /* Ajusta este valor según tus necesidades */
-    left: 19%;
+    left: 22%;
     text-align: center;
     font-size: 1.5rem;
     background-color: #088cbc; /*color botón*/
@@ -421,13 +439,13 @@ body{
     text-decoration: none; /*decoración texto*/
     text-transform: uppercase; /*capitalización texto*/
 }
-.botonSiguiente2{
+.botonSegundaSilaba{
     width: 200px;
     height: 45px;
     border-radius: 10px;
     position: absolute;
     top: 60%; /* Ajusta este valor según tus necesidades */
-    left: 42.5%;
+    left: 44%;
     text-align: center;
     font-size: 1.5rem;
     background-color: #088cbc; /*color botón*/
@@ -435,7 +453,7 @@ body{
     text-decoration: none; /*decoración texto*/
     text-transform: uppercase; /*capitalización texto*/
 }
-.botonSiguiente3{
+.botonTerceraSilaba{
     width: 200px;
     height: 45px;
     border-radius: 10px;
@@ -449,6 +467,7 @@ body{
     text-decoration: none; /*decoración texto*/
     text-transform: uppercase; /*capitalización texto*/
 }
+
 /*Felicitaciones*/
 .fondoFelicitaciones{
     display: flex;
