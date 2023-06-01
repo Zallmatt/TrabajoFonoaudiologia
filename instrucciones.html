@@ -10,13 +10,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="fondo">
-        <div class="diapositiva">
-            <img src="imagenes/cohete.png" style="width: 250px; height: 450px; transform: translate(-70px, 400px) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false">
-            <img src="imagenes/estrellas.webp" style="width: 250px; height: 250px; transform: translate(0px, -450px) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false"> 
-            <img src="imagenes/camion.png" style="width: 400px; height: 400px; transform: translate(1250px, -80px) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false">           
+    <div class="fondoGeneral">
+        <div class="diapositivaGeneral">
+            <img src="imagenes\Instrucciones\camion.png" style="width: 23vw; height: 13vw; position: fixed; top: 87%; left: 85%; transform: translate(-50%, -50%) rotate(0deg);" alt="Camion de Juguete">           
+            <img src="imagenes\Instrucciones\cohete.png" style="width: 13vw; height: 23vw; position: fixed; top: 80%; left: 2%; transform: translate(-50%, -50%) rotate(0deg);" alt="Cohete">  
+            <img src="imagenes\Instrucciones\estrellas.webp" style="width: 22vw; height: 15vw; position: fixed; top: 8%; left: 6%; transform: translate(-50%, -50%) rotate(0deg);" alt="Estrellas Colgante">  
             <div class="" >
-                <a class="btn btn-success" href="comenzarJuego.html">Continuemos</a>
+                <a id="myButton" style="display: none"; class="botonContinuemos" href="comenzarJuego.html">Continuemos</a>
             </div>
             <div>
                 <h1 class="tituloInstrucciones">
@@ -30,5 +30,15 @@
             </div>
         </div>
     </div>
+    <script>
+        // Obtener referencia al botón
+        var myButton = document.getElementById("myButton");
+
+        // Esperar 5 segundos (5000 milisegundos)
+        setTimeout(function() {
+        // Mostrar el botón cambiando su estilo
+        myButton.style.display = "block";
+        }, 3000);
+    </script>
 </body>
 </html>

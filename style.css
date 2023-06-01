@@ -82,7 +82,7 @@ body{
     height: 45px;
     position: absolute;
     top: 80%; /* Ajusta este valor según tus necesidades */
-    left: 45%;
+    left: 44%;
     text-align: center;
     font-size: 1.5rem;
     background-color: #38b81f; /*color botón*/
@@ -96,7 +96,7 @@ body{
 .tituloInstrucciones{
     font-family: cursive;
     position: absolute;
-    top: 23%;
+    top: 20%;
     left: 51%;
     transform: translate(-50%, -50%);
     font-size: 6rem;
@@ -108,7 +108,7 @@ body{
     top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 35px;
+    font-size: 2.2rem;
 }
 
 /*Comenzar Juego*/
@@ -116,32 +116,36 @@ body{
     font-family: cursive;
     position: absolute;
     width: 1150px;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5rem;
 }
-.btn-circle.btn-xl {
-    width: 150px;
-    height: 150px;
+.botonComenzarJuego{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
     position: absolute;
-    top: 70%; /* Ajusta este valor según tus necesidades */
-    left: 60%;
-    border-radius: 150px;
-    font-size: 12px;
+    top: 60%; /* Ajusta este valor según tus necesidades */
+    left: 57%;
     text-align: center;
-    font-size: 5rem;
+    font-size: 8rem;
+    background-color: #33db24f5; /*color botón*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
 }
-.btn-circle.btn-sm {
-    width: 150px;
-    height: 150px;
+.botonNoQuieroJugar{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
     position: absolute;
-    top: 70%; /* Ajusta este valor según tus necesidades */
-    left: 40%;
-    border-radius: 150px;
-    font-size: 12px;
+    top: 60%; /* Ajusta este valor según tus necesidades */
+    left: 30%;
     text-align: center;
-    font-size: 5rem;
+    font-size: 8rem;
+    background-color: #da2b2bf5; /*color botón*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
 }
 
 /*SeleccionarEdad*/
