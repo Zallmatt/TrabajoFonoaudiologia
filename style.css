@@ -173,7 +173,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
     position: absolute;
     width: 0px;
-    top: 76.5%;
+    top: 75.5%;
     left: 21%;
     transform: translate(-50%, -50%);
     font-size: 4rem;
@@ -183,7 +183,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
     position: absolute;
     width: 0px;
-    top: 76.5%;
+    top: 75.5%;
     left: 61.2%;
     transform: translate(-50%, -50%);
     font-size: 4rem;
@@ -235,6 +235,7 @@ body{
 .parrafoComponenteFonologico1{
     font-family: cursive;
     position: absolute;
+    width: 1200px;
     top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -528,40 +529,45 @@ body{
     height: 100vh;
     background-color: rgb(57, 125, 201);
     text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .diapositivaJuego2{
     display:flex;
     background-color: rgb(242, 242, 242);
     position: absolute;
-    top: 15%;
-    left: 9%;
-    height: 750px;
-    width: 1600px;
     flex-direction:column;
+    height: 80vh;
+    width: 90vw;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .silaba1Juego2{
     font-family: cursive;
     position: absolute;
     top: 80%;
-    left: 35%;
+    left: 28%;
     transform: translate(-50%, -50%);
     font-size: 8rem;
     background-color: rgb(0, 69, 44);
     width: 320px;
     height: 160px;
     border-radius: 10px;
+    display: none;
 }
 .silaba2Juego2{
     font-family: cursive;
     position: absolute;
     top: 80%;
-    left: 54%;
+    left: 49%;
     transform: translate(-50%, -50%);
     font-size: 8rem;
     background-color: rgb(0, 69, 44);
     width: 180px;
     height: 160px;
     border-radius: 10px;
+    display: none;
 }
 .silaba3Juego2{
     font-family: cursive;
@@ -574,12 +580,13 @@ body{
     width: 190px;
     height: 160px;
     border-radius: 10px;
+    display: none;
 }
 .divisoria1Juego2{
     font-family: cursive;
     position: absolute;
     top: 75%;
-    left: 61.5%;
+    left: 40%;
     transform: translate(-50%, -50%);
     font-size: 20rem;
 }
@@ -587,7 +594,7 @@ body{
     font-family: cursive;
     position: absolute;
     top: 75%;
-    left: 46.2%;
+    left: 59.5%;
     transform: translate(-50%, -50%);
     font-size: 20rem;
 }
@@ -597,7 +604,7 @@ body{
     height: 30px;
     background-color: yellow;
     top: 91%;
-    left: 35%;
+    left: 28%;
     transform: translate(-50%, -50%);
     font-size: 1rem;
 }
@@ -607,7 +614,7 @@ body{
     height: 30px;
     background-color: yellow;
     top: 91%;
-    left: 54%;
+    left: 49%;
     transform: translate(-50%, -50%);
     font-size: 1rem;
 }
@@ -621,6 +628,49 @@ body{
     transform: translate(-50%, -50%);
     font-size: 1rem;
 }
+.botonPrimeraSilabaJuego2{
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    position: absolute;
+    top: 60%; /* Ajusta este valor según tus necesidades */
+    left: 20%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #088cbc; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+}
+.botonSegundaSilabaJuego2{
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    position: absolute;
+    top: 60%; /* Ajusta este valor según tus necesidades */
+    left: 43%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #088cbc; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+}
+.botonTerceraSilabaJuego2{
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    position: absolute;
+    top: 60%; /* Ajusta este valor según tus necesidades */
+    left: 66%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #088cbc; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+}
+
 
 /*Componente Fonologico Juego3*/
 .silaba1Juego3{
@@ -634,6 +684,7 @@ body{
     width: 220px;
     height: 160px;
     border-radius: 10px;
+    display: none;
 }
 .silaba2Juego3{
     font-family: cursive;
@@ -646,6 +697,7 @@ body{
     width: 220px;
     height: 160px;
     border-radius: 10px;
+    display: none;
 }
 .divisoria1Juego3{
     font-family: cursive;
@@ -674,6 +726,34 @@ body{
     left: 60%;
     transform: translate(-50%, -50%);
     font-size: 1rem;
+}
+.botonPrimeraSilabaJuego3{
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    position: absolute;
+    top: 60%; /* Ajusta este valor según tus necesidades */
+    left: 33%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #088cbc; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+}
+.botonSegundaSilabaJuego3{
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    position: absolute;
+    top: 60%; /* Ajusta este valor según tus necesidades */
+    left: 55%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #088cbc; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
 }
 
 /*ComponenteFonologicoJuego2*/

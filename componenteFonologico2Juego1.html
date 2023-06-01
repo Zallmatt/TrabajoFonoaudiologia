@@ -11,13 +11,13 @@
 </head>
 <body>
     <div class="fondoComponenteFonologicoJuego2">
-        <div class="diapositiva">
-            <img src="imagenes/B.webp" style="width: 150px; height: 200px; transform: translate(1200px, 50px) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false" >
-            <img src="imagenes/Flecha.webp" style="width: 250px; height: 100px; transform: translate(850px, -100px) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false">
-            <img src="imagenes/barco.webp" style="width: 250px; height: 250px; transform: translate(80px, 150px) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false" onclick="toggleImageSelection(this)">
-            <img src="imagenes/banana.webp" style="width: 250px; height: 250px; transform: translate(220%, -90%) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false" onclick="toggleImageSelection(this)">
-            <img src="imagenes/auto.webp" style="width: 250px; height: 250px; transform: translate(380%, -150%) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false" onclick="toggleImageSelection(this)">
-            <img src="imagenes/house.webp" style="width: 250px; height: 250px; transform: translate(550%, -235%) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false" onclick="toggleImageSelection(this)">
+        <div class="diapositivaGeneral">
+            <img src="imagenes/componenteFonologico2Juego1/B.webp" style="width: 150px; height: 200px;position: fixed; top: 11%; left: 75%; transform: translate(-50px, -50px) rotate(0deg);" alt="B" draggable="false" >
+            <img src="imagenes/componenteFonologico2Juego1/Flecha.webp" style="width: 250px; height: 100px;position: fixed; top: 15%; left: 55%; transform: translate(-50px, -50px) rotate(0deg);" alt="Flecha" draggable="false">
+            <img src="imagenes/componenteFonologico2Juego1/barco.webp" style="width: 250px; height: 250px;position: fixed; top: 55%; left: 9%; transform: translate(-50px, -50px) rotate(0deg);" alt="Barco" draggable="false" onclick="toggleImageSelection(this)">
+            <img src="imagenes/componenteFonologico2Juego1/banana.webp" style="width: 250px; height: 250px; position: fixed; top: 48%; left: 40%; transform: translate(-50%, -50%) rotate(0deg);" alt="Banana" draggable="false" onclick="toggleImageSelection(this)">
+            <img src="imagenes/componenteFonologico2Juego1/auto.webp" style="width: 250px; height: 200px; position: fixed; top: 68%; left: 63%; transform: translate(-50%, -50%) rotate(0deg);" alt="Auo" draggable="false" onclick="toggleImageSelection(this)">
+            <img src="imagenes/componenteFonologico2Juego1/house.webp" style="width: 250px; height: 250px; position: fixed; top: 48%; left: 87%; transform: translate(-50%, -50%) rotate(0deg);" alt="Casa" draggable="false" onclick="toggleImageSelection(this)">
             <button type="button" class="avanzar" onclick="redirect()">Continuar</button>
             </div>
                 <h1 class="consignaFonologico2Juego1">
@@ -56,16 +56,27 @@
       
         function redirect() {
           console.log(selectedImages)
-          const isBarcoSelected = selectedImages.includes('http://127.0.0.1:5500/imagenes/barco.webp');
-          const isBananaSelected = selectedImages.includes('http://127.0.0.1:5500/imagenes/banana.webp');
-      
-          if (isBarcoSelected && isBananaSelected) {
-            // Ambas imágenes están seleccionadas, redirigir a felicitacion2.html
-            window.location.href = 'felicitacion2.html';
-          } else {
+          const isBarcoSelected = selectedImages.includes('http://127.0.0.1:5500/imagenes/componenteFonologico2Juego1/barco.webp');
+          const isBananaSelected = selectedImages.includes('http://127.0.0.1:5500/imagenes/componenteFonologico2Juego1/banana.webp');
+          const isAutoSelected = selectedImages.includes('http://127.0.0.1:5500/imagenes/componenteFonologico2Juego1/auto.webp');
+          const isCasaSelected = selectedImages.includes('http://127.0.0.1:5500/imagenes/componenteFonologico2Juego1/house.webp');
+
+          if (isBarcoSelected && isBananaSelected && isAutoSelected) {
+            // Barco, banana y auto están seleccionados
             // Otra condición o redirección si no se cumplen las condiciones anteriores
-            window.location.href = 'volverIntentar.html';
+            window.location.href = 'volverIntentar4.html';
+          } else if (isBarcoSelected && isBananaSelected && isAutoSelected && isCasaSelected) {
+            // Barco, banana, auto y casa están seleccionados
+            // Otra condición o redirección si no se cumplen las condiciones anteriores
+            window.location.href = 'volverIntentar4.html';
+          }else if (isBarcoSelected && isBananaSelected) {
+            // Ambas imágenes están seleccionadas, redirigir a felicitacion4.html
+            window.location.href = 'felicitacion4.html';
+          }else {
+            // Otra condición o redirección si no se cumplen las condiciones anteriores
+            window.location.href = 'volverIntentar4.html';
           }
+
         }
       </script>
 </body>

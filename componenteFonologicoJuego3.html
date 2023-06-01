@@ -19,7 +19,9 @@
         <div class="diapositivaJuego2">
             <a type ="button" class="botonFelicitaciones" href="felicitacion3.html">✔</a>
             <a type="button" class="botonVolverIntentar" href="volverIntentar3.html">✖</a>
-            <img src="imagenes/monitoJuego3.webp" style="width: 550px; height: 400px; transform: translate(545px, 20px) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false"> 
+            <img src="imagenes/componenteFonologicoJuego3/monitoJuego3.webp" style="width: 550px; height: 400px; transform: translate(545px, 20px) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false"> 
+            <a id="enlaceSilaba1" type="button" class="botonPrimeraSilabaJuego3">Primera Silaba</a>
+            <a id="enlaceSilaba2" type="button" class="botonSegundaSilabaJuego3">Segunda Silaba</a>
             </div>
             <div >
                 <h2 class="silaba1Juego3" style= "color: rgb(42, 248, 0);">MO</h2>
@@ -29,5 +31,33 @@
                 <h2 class="barraAbajo2Juego3" style= "color: yellow;">-</h2>
             </div>
     </div>
+    <script>
+        // Obtener referencias a los elementos de enlace
+        var enlaceSilaba1 = document.getElementById("enlaceSilaba1");
+        var enlaceSilaba2 = document.getElementById("enlaceSilaba2");
+        var enlaceSilaba3 = document.getElementById("enlaceSilaba3");
+      
+        // Obtener referencias a los elementos de sílabas
+        var silaba1 = document.querySelector(".silaba1Juego3");
+        var silaba2 = document.querySelector(".silaba2Juego3");
+      
+        // Agregar eventos de clic a los enlaces
+        enlaceSilaba1.addEventListener("click", function() {
+          silaba1.style.display = "block"; // Mostrar sílaba 1
+          enlaceSilaba1.style.display = "none"; // Ocultar botón
+        });
+      
+        enlaceSilaba2.addEventListener("click", function() {
+          silaba2.style.display = "block"; // Mostrar sílaba 2
+          enlaceSilaba2.style.display = "none"; // Ocultar botón
+        });
+
+        enlaceSilaba3.addEventListener("click", function() {
+          silaba3.style.display = "block"; // Mostrar sílaba 2
+          enlaceSilaba3.style.display = "none"; // Ocultar botón
+        });
+      
+        // Puedes agregar más eventos de clic para mostrar otras sílabas si es necesario
+      </script>
 </body>
 </html>
