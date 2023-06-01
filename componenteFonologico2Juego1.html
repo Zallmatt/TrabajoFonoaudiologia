@@ -12,13 +12,13 @@
 <body>
     <div class="fondoComponenteFonologicoJuego2">
         <div class="diapositiva">
-            <img src="imagenes/B.webp" style="width: 150px; height: 200px; transform: translate(1200px, 50px) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false">
+            <img src="imagenes/B.webp" style="width: 150px; height: 200px; transform: translate(1200px, 50px) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false" >
             <img src="imagenes/Flecha.webp" style="width: 250px; height: 100px; transform: translate(850px, -100px) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false">
-            <img src="imagenes/barco.webp" style="width: 250px; height: 250px; transform: translate(80px, 150px) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false">
-            <img src="imagenes/banana.webp" style="width: 250px; height: 250px; transform: translate(220%, -90%) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false">
-            <img src="imagenes/auto.webp" style="width: 250px; height: 250px; transform: translate(380%, -150%) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false">
-            <img src="imagenes/house.webp" style="width: 250px; height: 250px; transform: translate(550%, -235%) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false">
-            <a type="button" class="avanzar" href="componenteFonologico2Juego2.html"><b>Continuar</b></a>
+            <img src="imagenes/barco.webp" style="width: 250px; height: 250px; transform: translate(80px, 150px) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false" onclick="toggleImageSelection(this)">
+            <img src="imagenes/banana.webp" style="width: 250px; height: 250px; transform: translate(220%, -90%) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false" onclick="toggleImageSelection(this)">
+            <img src="imagenes/auto.webp" style="width: 250px; height: 250px; transform: translate(380%, -150%) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false" onclick="toggleImageSelection(this)">
+            <img src="imagenes/house.webp" style="width: 250px; height: 250px; transform: translate(550%, -235%) rotate(0deg);" alt="Smiley Shape Illustration" draggable="false" onclick="toggleImageSelection(this)">
+            <button type="button" class="avanzar" onclick="redirect()">Continuar</button>
             </div>
                 <h1 class="consignaFonologico2Juego1">
                     <b>Objetos que inicien con la letra </b>
@@ -37,5 +37,36 @@
                 </h2>
         </div>
     </div>
+    <script>
+        const selectedImages = [];
+      
+        function toggleImageSelection(image) {
+            console.log(image);
+            image.classList.toggle('selected');
+         
+          if (image.classList.contains('selected')) {
+            selectedImages.push(image.src);
+          } else {
+            const index = selectedImages.indexOf(image.src);
+            if (index > -1) {
+              selectedImages.splice(index, 1);
+            }
+          }
+        }
+      
+        function redirect() {
+          console.log(selectedImages)
+          const isBarcoSelected = selectedImages.includes('http://127.0.0.1:5500/imagenes/barco.webp');
+          const isBananaSelected = selectedImages.includes('http://127.0.0.1:5500/imagenes/banana.webp');
+      
+          if (isBarcoSelected && isBananaSelected) {
+            // Ambas imágenes están seleccionadas, redirigir a felicitacion2.html
+            window.location.href = 'felicitacion2.html';
+          } else {
+            // Otra condición o redirección si no se cumplen las condiciones anteriores
+            window.location.href = 'volverIntentar.html';
+          }
+        }
+      </script>
 </body>
 </html>
